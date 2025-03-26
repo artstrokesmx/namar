@@ -1,0 +1,209 @@
+[
+    {
+        "id": 1,
+        "titulo": "Maleta Pink",
+        "precio": 400,
+        "descripcion": "Maleta deportiva para regalo, color azul",
+        "categoria":{
+            "id": "1",
+            "nombre": "maletas",
+            "imagen": "/Api/imagenes/maleta1.jpg"
+        },
+        "imagenes":[
+            "/Api/imagenes/maleta1.jpg",
+            "/Api/imagenes/maleta2.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "titulo": "Nine West",
+        "precio": 600,
+        "descripcion": "Linda bolsa para tu día a día, color gris Nine West, con correra",
+        "categoria":{
+            "id": "2",
+            "nombre": "bolsas",
+            "imagen": "/Api/imagenes/bolsa1.jpg"
+        },
+        "imagenes":[
+            "/Api/imagenes/bolsa1.jpg",
+            "/Api/imagenes/bolsa2.jpg",
+            "/Api/imagenes/bolsa3.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "titulo": "Maleta Footbal Pink",
+        "precio": 200,
+        "descripcion": "Maleta para entrenamientos con bolsas para tacos, color amarillo marca Pink",
+        "categoria":{
+            "id": "1",
+            "nombre": "maletas",
+            "imagen": "/Api/imagenes/maleta2.jpg"
+        },
+        "imagenes":[
+            "/Api/imagenes/maleta2.jpg",
+            "/Api/imagenes/maleta4.jpg",
+            "/Api/imagenes/maleta5.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "titulo": "Maleta Pink",
+        "precio": 200,
+        "descripcion": "Maleta deportiva color azul cielo, marca Pink",
+        "categoria":{
+            "id": "1",
+            "nombre": "maletas",
+            "imagen": "/Api/imagenes/maleta3.jpg"
+        },
+        "imagenes":[
+            "/Api/imagenes/maleta3.jpg",
+            "/Api/imagenes/maleta4.jpg",
+            "/Api/imagenes/maleta5.jpg"
+        ]
+    },
+    {
+        "id": 5,
+        "titulo": "Steve Madden",
+        "precio": 200,
+        "descripcion": "Bolsa Steve Madden, color rosa claro, con correa",
+        "categoria":{
+            "id": "1",
+            "nombre": "bolsas",
+            "imagen": "/Api/imagenes/maleta1.jpg"
+        },
+        "imagenes":[
+            "/Api/imagenes/bolsa2.jpg",
+            "/Api/imagenes/maleta4.jpg",
+            "/Api/imagenes/maleta5.jpg"
+        ]
+    },
+    {
+        "id": 6,
+        "titulo": "Steve Madden",
+        "precio": 200,
+        "descripcion": "Bolsa Steve Madden, color negro, con correa y monedero de cuero",
+        "categoria":{
+            "id": "1",
+            "nombre": "bolsas",
+            "imagen": "/Api/imagenes/maleta1.jpg"
+        },
+        "imagenes":[
+            "/Api/imagenes/bolsa3.jpg",
+            "/Api/imagenes/maleta4.jpg",
+            "/Api/imagenes/maleta5.jpg"
+        ]
+    },
+    {
+        "id": 7,
+        "titulo": "DKNY",
+        "precio": 200,
+        "descripcion": "DKNY color beige con estampado de la marca,correra en verde grisaceo, tela de cuero",
+        "categoria":{
+            "id": "1",
+            "nombre": "bolsas",
+            "imagen": "/Api/imagenes/maleta1.jpg"
+        },
+        "imagenes":[
+            "/Api/imagenes/bolsa4.jpg",
+            "/Api/imagenes/maleta4.jpg",
+            "/Api/imagenes/maleta5.jpg"
+        ]
+    },
+    {
+        "id": 8,
+        "titulo": "Steve Madden",
+        "precio": 200,
+        "descripcion": "Bolsa Steve Madden, color rosa pálido de forma cuadrada, compuesto de piel y tela",
+        "categoria":{
+            "id": "1",
+            "nombre": "bolsas",
+            "imagen": "/Api/imagenes/maleta1.jpg"
+        },
+        "imagenes":[
+            "/Api/imagenes/bolsa5.jpg",
+            "/Api/imagenes/maleta4.jpg",
+            "/Api/imagenes/maleta5.jpg"
+        ]
+    },
+    {
+        "id": 9,
+        "titulo": "Apana",
+        "precio": 200,
+        "descripcion": "Bolsa Apana beige, con correa gruesa, compuestas de tela",
+        "categoria":{
+            "id": "1",
+            "nombre": "bolsas",
+            "imagen": "/Api/imagenes/maleta1.jpg"
+        },
+        "imagenes":[
+            "/Api/imagenes/bolsa6.jpg",
+            "/Api/imagenes/maleta4.jpg",
+            "/Api/imagenes/maleta5.jpg"
+        ]
+    },
+    {
+        "id": 10,
+        "titulo": "Gaiam",
+        "precio": 200,
+        "descripcion": "Bolsa Gaiam de tela con cierre grueso color Rosa mexicano",
+        "categoria":{
+            "id": "1",
+            "nombre": "bolsas",
+            "imagen": "/Api/imagenes/maleta1.jpg"
+        },
+        "imagenes":[
+            "/Api/imagenes/bolsa7.jpg",
+            "/Api/imagenes/maleta4.jpg",
+            "/Api/imagenes/maleta5.jpg"
+        ]
+    },
+    {
+        "id": 11,
+        "titulo": "Pink",
+        "precio": 200,
+        "descripcion": "Maleta Pink azul aqua",
+        "categoria":{
+            "id": "1",
+            "nombre": "maletas",
+            "imagen": "/Api/imagenes/maleta3.jpg"
+        },
+        "imagenes":[
+            "/Api/imagenes/maleta4.jpg",
+            "/Api/imagenes/maleta4.jpg",
+            "/Api/imagenes/maleta5.jpg"
+        ]
+    },
+    {
+        "id": 12,
+        "titulo": "Mochila Nike",
+        "precio": 200,
+        "descripcion": "Mochila Nike color negro ideal para escuela y deporte",
+        "categoria":{
+            "id": "1",
+            "nombre": "mochilas",
+            "imagen": "/Api/imagenes/maleta3.jpg"
+        },
+        "imagenes":[
+            "/Api/imagenes/mochila1.jpg",
+            "/Api/imagenes/maleta4.jpg",
+            "/Api/imagenes/maleta5.jpg"
+        ]
+    },
+    {
+        "id": 13,
+        "titulo": "Mochila Nike gris",
+        "precio": 200,
+        "descripcion": "Mochila Nike color gris ideal para escuela y deporte",
+        "categoria":{
+            "id": "1",
+            "nombre": "mochilas",
+            "imagen": "/Api/imagenes/maleta3.jpg"
+        },
+        "imagenes":[
+            "/Api/imagenes/mochila2.jpg",
+            "/Api/imagenes/maleta4.jpg",
+            "/Api/imagenes/maleta5.jpg"
+        ]
+    }
+]
