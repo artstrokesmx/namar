@@ -24,8 +24,9 @@ function Home() {
   
   return (
       <Layout>
-        <div>
-          <h1 className="font-medium text-xl">NAMAR</h1>
+        <div className='justify-items-center mt-14'>
+          <img className='w-12' src="/logonamararcoiris.png" alt="" />
+          <h1 className="font-medium text-xl text-pink-400">NAMAR</h1>
           <p>Los productos que vas a amar</p>
         </div>
         <input

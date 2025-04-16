@@ -205,5 +205,21 @@
             "/Api/imagenes/maleta4.jpg",
             "/Api/imagenes/maleta5.jpg"
         ]
+    },
+    {
+        "id": 14,
+        "titulo": "Mochila Nike gris",
+        "precio": 250,
+        "descripcion": "Mochila Deer negra para escuela y deporte",
+        "categoria":{
+            "id": "1",
+            "nombre": "mochilas",
+            "imagen": "/Api/imagenes/mochila_negra.jpg"
+        },
+        "imagenes":[
+            "/Api/imagenes/mochila_negra.jpg",
+            "/Api/imagenes/mochila_negra.jpg",
+            "/Api/imagenes/mochila_negra.jpg"
+        ]
     }
 ]
