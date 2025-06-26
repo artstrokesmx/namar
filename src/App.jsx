@@ -6,9 +6,10 @@ import {DetalleProducto} from './paginas/DetalleProducto'
 
 function App() {
   return (
-    <Router basename='/namar/'>
+    <Router>
       <Routes>
         <Route path="/" element={<Inicio />} />
+        <Route path="/namar/" element={<Inicio />} />
         <Route path="/inicio" element={<Inicio />} />
         <Route path="/categorias/:categoria" element={<Categorias />} />
         <Route path="/producto/:id" element={<DetalleProducto />} />
