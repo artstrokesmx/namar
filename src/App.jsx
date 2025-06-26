@@ -6,7 +6,7 @@ import {DetalleProducto} from './paginas/DetalleProducto'
 
 function App() {
   return (
-    <Router basename='/namar'>
+    <Router basename='/namar/'>
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/inicio" element={<Inicio />} />
