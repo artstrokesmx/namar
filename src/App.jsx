@@ -2,14 +2,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Inicio } from './paginas/Inicio';
 import { Categorias } from './componentes/Categorias';
 import { CarritoPagina } from './paginas/CarritoPagina';
-// import { Navegacion } from './componentes/Navegacion';
-// import { Producto } from './componentes/Producto';
 import {DetalleProducto} from './paginas/DetalleProducto'
 
 function App() {
   return (
     <Router>
-      {/* <Navegacion /> */}
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/inicio" element={<Inicio />} />
