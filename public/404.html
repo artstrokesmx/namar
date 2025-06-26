@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redireccionando...</title>
+  <script type="text/javascript">
+    // Obtén el nombre del repositorio de tu URL para construir la base correctamente
+    const pathSegments = window.location.pathname.split('/');
+    // Esto asume que tu URL es https://usuario.github.io/nombre-repositorio/ruta
+    // Si tu URL es https://usuario.github.io/ (página de usuario/organización), ajusta slice(0) o quita esta lógica de "base"
+    const repoBase = pathSegments[1] ? `/${pathSegments[1]}/` : '/'; // Esto manejará si hay un nombre de repo o no
+
+    // Construye la URL de redirección completa
+    // Redirige a la base de tu aplicación (index.html) para que React Router maneje la ruta
+    window.location.replace(window.location.origin + repoBase);
+  </script>
+</head>
+<body>
+  <p>Si no eres redireccionado automáticamente, haz clic <a href="/">aquí</a>.</p>
+</body>
+</html>
