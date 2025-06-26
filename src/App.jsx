@@ -6,11 +6,10 @@ import {DetalleProducto} from './paginas/DetalleProducto'
 
 function App() {
   return (
-    <Router>
+    <Router basename='/namar'>
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/inicio" element={<Inicio />} />
-        <Route path="/namar/" element={<Inicio />} />
         <Route path="/categorias/:categoria" element={<Categorias />} />
         <Route path="/producto/:id" element={<DetalleProducto />} />
         <Route path="/carrito" element={<CarritoPagina />} />
