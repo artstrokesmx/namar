@@ -31,7 +31,7 @@ export const DetalleProducto = () => {
         <div className="galeria">
           <div className="imagen-principal">
             <img 
-              src={`/assets/${producto.imagenes[imagenActual]}`} 
+              src={`/public/assets/${producto.imagenes[imagenActual]}`} 
               alt={producto.nombre} 
               className="imagen-producto"
             />
