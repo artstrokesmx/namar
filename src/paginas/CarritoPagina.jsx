@@ -21,7 +21,7 @@ export const CarritoPagina = () => {
             {carrito.map((item) => (
               <div key={`${item.id}-${item.colorSeleccionado}`} className="item-carrito">
                 <img 
-                  src={`/assets/${item.imagenes[0]}`} 
+                  src={`/namar/public/assets/productos/${item.imagenes[0]}`} 
                   alt={item.nombre}
                   className="imagen-item"
                 />

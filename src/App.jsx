@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Inicio } from './paginas/Inicio'
 import { Categorias } from './componentes/Categorias'
 import { CarritoPagina } from './paginas/CarritoPagina'
-import { DetalleProducto } from './paginas/DetalleProducto'
+import  {DetalleProducto } from './paginas/DetalleProducto'
 
 function App() {
   return (

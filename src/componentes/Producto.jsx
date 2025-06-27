@@ -17,7 +17,7 @@ export const Producto = ({ producto }) => {
       >
         <div className="imagen-producto relative h-48 overflow-hidden">
           <img 
-            src={`/namar/public/assets/${imagenPrincipal}`} 
+            src={`/namar/assets/productos/${imagenPrincipal}`} 
             alt={producto.nombre}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
@@ -45,7 +45,7 @@ export const Producto = ({ producto }) => {
 
         <div className="flex gap-2">
           <Link 
-            to={`/producto/${producto.id}`}
+            to={`/productos/${producto.id}`}
             className="btn-ver bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors flex-1 text-center"
           >
             Ver detalles

@@ -28,7 +28,6 @@ export const Inicio = () => {
             <div 
               key={producto.id} 
               className="hover:shadow-lg transition-shadow"
-              onClick={() => window.location.href = `/namar/producto/${producto.id}`}
               style={{ cursor: 'pointer' }}
             >
               <Producto producto={producto} />

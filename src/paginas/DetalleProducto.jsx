@@ -24,23 +24,22 @@ export const DetalleProducto = () => {
 
   return (
     <div className="detalle-producto contenedor">
-      
-
       <div className="grid-detalle">
         {/* Galería de imágenes */}
         <div className="galeria">
           <div className="imagen-principal">
             <img 
-              src={`/public/assets/${producto.imagenes[imagenActual]}`} 
+              src={`/namar/assets/productos/${producto.imagenes[imagenActual]}`} 
               alt={producto.nombre} 
               className="imagen-producto"
+              onError={e => e.target.src = '/namar/assets/productos/default.jpg'}
             />
           </div>
           <div className="miniaturas">
             {producto.imagenes.map((img, index) => (
               <img
                 key={index}
-                src={`/assets/${img}`}
+                src={`/namar/assets/productos/${img}`}
                 alt={`Vista ${index + 1}`}
                 onClick={() => setImagenActual(index)}
                 className={index === imagenActual ? 'miniatura-activa' : ''}
@@ -52,7 +51,7 @@ export const DetalleProducto = () => {
         {/* Info del producto */}
         <div className="info-detalle">
           <h1>{producto.nombre}</h1>
-          
+
           <div className="precio-detalle">
             {producto.oferta ? (
               <>
@@ -117,7 +116,6 @@ export const DetalleProducto = () => {
             Añadir al carrito (${producto.oferta ? producto.oferta * cantidad : producto.precio * cantidad})
           </button>
         </div>
-        
       </div>
       <div className='flex justify-center'>
         <button 
@@ -140,8 +138,6 @@ export const DetalleProducto = () => {
         ← Inicio
       </button>
       </div>
-      
     </div>
-    
   );
 };
