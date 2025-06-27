@@ -17,7 +17,7 @@ export const Producto = ({ producto }) => {
       >
         <div className="imagen-producto relative h-48 overflow-hidden">
           <img 
-            src={`/namar/assets/productos/${imagenPrincipal}`} 
+            src={`${import.meta.env.BASE_URL}assets/productos/${imagenPrincipal}`} 
             alt={producto.nombre}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"

@@ -29,17 +29,17 @@ export const DetalleProducto = () => {
         <div className="galeria">
           <div className="imagen-principal">
             <img 
-              src={`/namar/assets/productos/${producto.imagenes[imagenActual]}`} 
+              src={`${import.meta.env.BASE_URL}assets/productos/${producto.imagenes[imagenActual]}`} 
               alt={producto.nombre} 
               className="imagen-producto"
-              onError={e => e.target.src = '/namar/assets/productos/default.jpg'}
+              onError={e => e.target.src = import.meta.env.BASE_URL + 'assets/productos/default.jpg'}
             />
           </div>
           <div className="miniaturas">
             {producto.imagenes.map((img, index) => (
               <img
                 key={index}
-                src={`/namar/assets/productos/${img}`}
+                src={`${import.meta.env.BASE_URL}assets/productos/${img}`}
                 alt={`Vista ${index + 1}`}
                 onClick={() => setImagenActual(index)}
                 className={index === imagenActual ? 'miniatura-activa' : ''}

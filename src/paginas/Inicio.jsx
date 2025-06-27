@@ -3,14 +3,13 @@ import { Producto } from '../componentes/Producto';
 import { Carrito } from '../componentes/Carrito';
 import { BotonWhatsApp } from '../componentes/BotonWhatsApp';
 import { Navegacion } from '../componentes/Navegacion';
-import logo from '/assets/logo-namar-watermark.png';
 
 export const Inicio = () => {
   return (
     <>
       <header className="text-center">
         <div className='flex justify-center'>
-          <img className='w-10 h-auto' src={logo} alt="Logo Namar" />
+          <img className='w-10 h-auto' src={import.meta.env.BASE_URL + 'assets/logo-namar-watermark.png'} alt="Logo Namar" />
         </div>
         <h1 className="titulo-tienda">Namar</h1>
         <p className='subtitulo-tienda'>Los regalos que vas a amar</p>
