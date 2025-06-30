@@ -24,6 +24,7 @@ export const DetalleProducto = () => {
 
   return (
     <div className="detalle-producto contenedor">
+      <h1>{producto.nombre}</h1>
       <div className="grid-detalle">
         {/* Galería de imágenes */}
         <div className="galeria">
@@ -35,7 +36,9 @@ export const DetalleProducto = () => {
               onError={e => e.target.src = import.meta.env.BASE_URL + 'assets/productos/default.jpg'}
             />
           </div>
+          <h4>Galería:</h4>
           <div className="miniaturas">
+            
             {producto.imagenes.map((img, index) => (
               <img
                 key={index}
@@ -50,24 +53,25 @@ export const DetalleProducto = () => {
 
         {/* Info del producto */}
         <div className="info-detalle">
-          <h1>{producto.nombre}</h1>
+          <h2>{producto.nombre}</h2>
 
-          <div className="precio-detalle">
+          <div className="precio-detalle font-bold">
             {producto.oferta ? (
               <>
+                <p>Precio: </p>
                 <span className="precio-tachado">${producto.precio}</span>
                 <span className="precio-oferta">${producto.oferta}</span>
               </>
             ) : (
-              <span>${producto.precio}</span>
+              <span>Precio:<br/> ${producto.precio}</span>
             )}
           </div>
-
+            <h4 className='font-semibold'>Descripción:</h4>
           <p className="descripcion">{producto.descripcion}</p>
 
           {producto.colores && (
             <div className="selector-colores">
-              <h3>Color:</h3>
+              <h3 className='font-semibold'>Color:</h3>
               <div className="colores">
                 {producto.colores.map(color => (
                   <div 
@@ -94,7 +98,7 @@ export const DetalleProducto = () => {
           )}
 
           <div className="selector-cantidad">
-            <h3>Cantidad:</h3>
+            <h3 className='font-semibold'>Cantidad:</h3>
             <div className="contador">
               <button 
                 onClick={() => setCantidad(Math.max(1, cantidad - 1))}

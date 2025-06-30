@@ -60,9 +60,21 @@ export const Carrito = () => {
                           <span 
                             className="muestra-color"
                             style={{ 
-                              backgroundColor: item.colorSeleccionado === 'azul' ? '#1b3c73' : 
-                                              item.colorSeleccionado === 'rosa' ? '#ffcad4' : 
-                                              item.colorSeleccionado === 'rojo' ? '#c70039' : '#f0f0f0'
+                              backgroundColor: 
+                              //                  item.colorSeleccionado === 'azul' ? '#1b3c73' : 
+                              //                 item.colorSeleccionado === 'rosa' ? '#ffcad4' : 
+                              //                 item.colorSeleccionado === 'rojo' ? '#c70039' : '#f0f0f0'
+                                      item.colorSeleccionado === 'amarillo' ? '#edb832' :
+                                      item.colorSeleccionado === 'azul' ? '#1b3c73' :
+                                      item.colorSeleccionado === 'azul jeans' ? '#7a889d':
+                                      item.colorSeleccionado === 'dorado' ? '#d2872c':
+                                      item.colorSeleccionado === 'ginda' ? '#a94d58':
+                                      item.colorSeleccionado === 'gris' ? '#777873':
+                                      item.colorSeleccionado === 'morado' ? '#812b85':
+                                      item.colorSeleccionado === 'rosa' ? '#c70039' : 
+                                      item.colorSeleccionado === 'plateado' ? '#f45ad2':
+                                      item.colorSeleccionado === 'negro' ? '#000000':
+                                      item.colorSeleccionado === 'rojo' ? '#c70039' : '#f0f0f0'
                             }}
                           />
                           {item.colorSeleccionado}

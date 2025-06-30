@@ -1,7 +1,7 @@
 import { productos } from '../datos/productos';
 import { Producto } from '../componentes/Producto';
 import { Carrito } from '../componentes/Carrito';
-import { BotonWhatsApp } from '../componentes/BotonWhatsApp';
+// import { BotonWhatsApp } from '../componentes/BotonWhatsApp';
 import { Navegacion } from '../componentes/Navegacion';
 
 export const Inicio = () => {
@@ -36,7 +36,7 @@ export const Inicio = () => {
       </main>
       
       <Carrito />
-      <BotonWhatsApp />
+      {/* <BotonWhatsApp /> */}
     </>
   );
 };

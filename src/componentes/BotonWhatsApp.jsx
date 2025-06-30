@@ -11,9 +11,10 @@ export const BotonWhatsApp = () => {
     }
 
     const listaProductos = carrito.map(item => {
-      const precioUnitario = item.oferta !== undefined ? item.oferta : item.precio;
-      const subtotalItem = precioUnitario * item.cantidad;
-      return `• ${item.nombre}${item.colorSeleccionado ? ` (${item.colorSeleccionado})` : ''} - ${item.cantidad} x $${precioUnitario.toFixed(2)} = $${subtotalItem.toFixed(2)}`;
+      const precioUnitario = (item.oferta !== undefined && item.oferta !== null) ? item.oferta : item.precio;
+      const precioSeguro = precioUnitario ?? 0;
+      const subtotalItem = precioSeguro * item.cantidad;
+      return `• ${item.nombre}${item.colorSeleccionado ? ` (${item.colorSeleccionado})` : ''} - ${item.cantidad} x $${precioSeguro.toFixed(2)} = $${subtotalItem.toFixed(2)}`;
     }).join('%0A');
 
     return `¡Hola Namar! Quiero comprar:%0A%0A${listaProductos}%0A%0ATotal: $${total.toFixed(2)}`;
@@ -21,14 +22,13 @@ export const BotonWhatsApp = () => {
 
   // Y SE USA AQUÍ EN EL RETURN DEL COMPONENTE
   return (
-    <div className='flex justify-center'>
-      <a className=''
+    <div className='flex justify-center  bg-green-500 text-white py-2 px-4 rounded'>
+      <a className='flex items-center justify-center'
       href={`https://wa.me/XXXXXXXXXXX?text=${encodeURIComponent(generarMensaje())}`}
       target="_blank"
       rel="noopener noreferrer"
-      // Añade clases o estilos si es necesario
     >
-      Enviar por WhatsApp
+      Comprar por WhatsApp
     </a>
     </div>
     

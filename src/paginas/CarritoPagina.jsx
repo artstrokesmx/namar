@@ -72,6 +72,7 @@ export const CarritoPagina = () => {
               <span>${total}</span>
             </div>
             <BotonWhatsApp />
+            <div className='h-2'></div>
             <Link to="/" className="btn">Seguir comprando</Link>
           </div>
         </>
